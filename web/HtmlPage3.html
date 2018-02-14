@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Urządzenia Mobilne</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="StyleSheet.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="jquery.js"> </script>
+    <script src="script/jquery.sliphover.js"></script>
+    <script src="script/jquery.sliphover.min.js"></script>
+    <script>
+                $(function(){
+                    $('#content').sliphover({
+                        caption: 'title',
+                        fontcolor: '#d14',
+                        reverse: true,
+                        target: '.hover'
+                    });
+
+                })
+    </script>
+    <script type="text/javascript" src="skrypt.js"></script>
+</head>
+<body onload="odliczanie()">
+    <div id="container">
+        <div id="header">
+            O urządzeniach mobilnych słów kilka!
+        </div>
+        <div class="menu2">
+            <ol>
+                <li>
+                    <a><b>Galeria zdjęć</b></a>
+                    <ul>
+                        <li><a class="white" href="HTMLPage6.html">Smartphony</a></li>
+                        <li><a class="white" href="HTMLPage7.html">Laptopy</a></li>
+                        <li><a class="white" href="HTMLPage8.html">Konsole przenośne</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div id="menu">
+            <a href="index.html"><div class="tile">Strona Główna</div></a>
+            <a href="HtmlPage2.html"><div class="tile">Smartphony</div></a>
+            <a href="HtmlPage3.html"><div class="tile">Laptopy</div></a>
+            <a href="HtmlPage4.html"><div class="tile">Konsole przenośne</div></a>
+            <a href="HtmlPage5.html"><div class="tile">Kontakt</div></a>
+            <a href="php/index.php"><div class="tile">Galeria Zdjęć - PHP</div></a>
+        </div>
+        <div id="content">
+            <div id="zegar"></div>
+            <h2 class="center">Laptopy</h2>
+            <p>
+                Laptop jest to forma przenośnego komputera. Posiada on wbudowaną, fizyczną klawiaturę.
+                Rynek podzielony jest na dwa rodzaje laptopów (co do systemu operacyjnego).Są to laptopy
+                z Windowsem oraz z MacOS (tzw.MacBooki).
+            </p>
+            <br/><br /><br /><br />
+            <table>
+                <tr>
+                    <td><img class="hover" src="mac.jpg" width="300" height="200" title="MacBook" alt="laptop"/></td>
+                    <td><img src="vs.png" width="130" height="130" alt="laptop" /></td>
+                    <td><img class="hover" src="win.jpg" width="300" height="200" title="Laptop z Windowsem" alt="laptop"/></td>
+                </tr>
+
+            </table>
+            <br /><br /><br /><br />
+            <p>
+                Istnieją również laptopy, na których można pograć nawet w najnowsze gry. Są to tzw.
+                laptopy gamingowe.Do jednych z najbardziej znanych przykładów należą laptopy
+                firmy Alienware.
+
+            </p>
+            <p>
+                Są one wyposażone w najnowsze karty graficzne, najlepsze procesory i najszybszą pamięć.
+                Jednakowoż coś za coś. Ich cena jest astronomiczna. Mogą osiągnąć wartość 20 000zł.
+            </p>
+            <br/><br />
+            <div class="srodek">
+                <img class="hover" src="game.jpeg" width="500" height="400" title="Laptop AlienWare" alt="laptop"/>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+        <div id="footer">Strona stworzona z myślą o projekcie.Wszelkie prawa zastrzeżone &copy;<a class="white" href="#container">  Back to top</a></div>
+
+
+
+    </div>
+</body>
+</html>
